@@ -34,21 +34,21 @@
 
 #### apache *非必需*
 
-* apache hosts配置
-* windows下hosts配置
+* apache hosts配置 [2016-10-27]
+* windows下hosts配置 [2016-10-27]
 
 ### 设计
 
-* wireframe
+* wireframe [2016-10-27]
 
 ### 前端
 
-* html & css
-* javascript
+* html & css [2016-10-27]
+* javascript [2016-10-27]
 
 ### 后端
 
-* php代码
+* php代码 [2016-10-27]
 * 配置文件
 * 代码封装
 
