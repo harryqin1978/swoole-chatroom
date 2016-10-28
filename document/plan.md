@@ -60,4 +60,4 @@
 
 * 日志
 * 历史纪录
-* 注册登录（配合mysql或mongodb）
+* 注册登录，发消息时token验证（配合mysql或mongodb）
