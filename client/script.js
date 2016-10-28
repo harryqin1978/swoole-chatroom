@@ -29,11 +29,15 @@ $( document ).ready(function() {
         var data = {'message' : message};
         data = JSON.stringify(data);
         websocket.send(data);
-        $( '#message' ).val('');
+        clearMessage();
     });
 });
 
 function addMessage(message) {
     $( '#mbox' ).append( '<p>' + message + '</p>' );
     $( 'body' ).scrollTop( $('body')[0].scrollHeight );
+}
+
+function clearMessage() {
+    $( '#message' ).val('');
 }
