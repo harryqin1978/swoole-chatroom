@@ -1,8 +1,6 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-    console.log(JSON.parse('{"foo" : 1, "bar": "234"}'));
-
     var wsServer = 'ws://192.168.56.101:9601';
     var websocket = new WebSocket(wsServer);
     websocket.onopen = function (evt) {
@@ -29,11 +27,15 @@ $( document ).ready(function() {
         var data = {'message' : message};
         data = JSON.stringify(data);
         websocket.send(data);
-        $( '#message' ).val('');
+        clearMessage();
     });
 });
 
 function addMessage(message) {
     $( '#mbox' ).append( '<p>' + message + '</p>' );
     $( 'body' ).scrollTop( $('body')[0].scrollHeight );
+}
+
+function clearMessage() {
+    $( '#message' ).val('');
 }
